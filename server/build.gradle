@@ -5,6 +5,7 @@ plugins {
 group 'org.example'
 version '1.0-SNAPSHOT'
 
+compileJava.options.encoding = "UTF-8"
 sourceCompatibility = 1.8
 
 repositories {
@@ -12,5 +13,11 @@ repositories {
 }
 
 dependencies {
+    compile project(path: ':faelles')
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'io.javalin:javalin:3.7.0'
+    compile "org.slf4j:slf4j-api:1.8.0-beta4"
+    compile "org.slf4j:slf4j-simple:1.8.0-beta4"
+    compile "org.slf4j:slf4j-simple:1.7.28"
+    compile "com.fasterxml.jackson.core:jackson-databind:2.10.1"
 }
