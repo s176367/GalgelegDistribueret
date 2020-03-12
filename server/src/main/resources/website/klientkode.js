@@ -10,9 +10,10 @@ document.getElementById("jsknap_hej").onclick = function(){
 
 document.getElementById("jsknap_info").onclick = function(){
     brugernavn = document.getElementById("jsinput_brugernavn").value;
+    adgangskode = document.getElementById("jsinput_adgangskode").value;
     console.log("Henter /rest/bruger/"+brugernavn);
 
-    fetch("/rest/bruger/"+brugernavn).then(function(response){
+    fetch("/rest/bruger/"+brugernavn+"?adgangskode="+adgangskode).then(function(response){
         console.log("Fik svar: "+response);
         // pars svaret som json
         response.json().then(function(bruger_som_json){
