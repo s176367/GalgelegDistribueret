@@ -8,10 +8,11 @@ document.getElementById("jsknap_hej").onclick = function(){
 
 };
 
-document.getElementById("jsknap_info").onclick = function(){
+document.getElementById("login_knap").onclick = function(){
     brugernavn = document.getElementById("jsinput_brugernavn").value;
     adgangskode = document.getElementById("jsinput_adgangskode").value;
     console.log("Henter /rest/bruger/"+brugernavn);
+    open("/rest/bruger/"+brugernavn+"?adgangskode="+adgangskode);
 
     fetch("/rest/bruger/"+brugernavn+"?adgangskode="+adgangskode).then(function(response){
         console.log("Fik svar: "+response);
