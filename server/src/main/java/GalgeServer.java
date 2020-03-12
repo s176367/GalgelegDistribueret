@@ -27,9 +27,14 @@ public class GalgeServer {
         //Rest
         app.config.enableCorsForAllOrigins();
         app.get("/rest/bruger/:brugernavn", GalgeServer::bruger);
+        app.get("/rest/:galgeleg", GalgeServer::galgeleg);
 
 
         }
+
+    private static void galgeleg(Context context) {
+        app.before(ctx -> System.out.println("Galgeleg åbnes"));
+    }
 
     private static void bruger(Context ctx) throws Exception{
         String brugernavn = ctx.pathParam("brugernavn");
