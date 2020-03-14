@@ -14,7 +14,6 @@ repositories {
 
 dependencies {
     compile project(path: ':faelles')
-    compile project(path: ':klient')
     testCompile group: 'junit', name: 'junit', version: '4.12'
     compile 'io.javalin:javalin:3.7.0'
     compile "org.slf4j:slf4j-api:1.8.0-beta4"
