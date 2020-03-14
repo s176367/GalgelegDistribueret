@@ -1,14 +1,4 @@
-document.getElementById("jsknap_hej").onclick = function(){
-    fetch("/rest/bruger/"+document.getElementById("jsinput_brugernavn").value).then(function(response){
-        // pars svaret som tekst
-        response.text().then(function(text){
-            document.getElementById("js_output").innerText = text;
-        })
-    })
-
-};
-
-document.getElementById("jsknap_info").onclick = function() {
+document.getElementById("jslogin_knap").onclick = function() {
     brugernavn = document.getElementById("jsinput_brugernavn").value;
     adgangskode = document.getElementById("jsinput_adgangskode").value;
     console.log("Henter /rest/bruger/" + brugernavn + "?adgangskode=" + adgangskode);
@@ -29,9 +19,7 @@ document.getElementById("jsknap_info").onclick = function() {
     document.getElementById("jsknap_login").onclick = function () {
         brugernavn = document.getElementById("jsinput_brugernavn").value;
         adgangskode = document.getElementById("jsinput_adgangskode").value;
-        document.open("/rest/bruger/"+brugernavn+"?adgangskode="+ adgangskode);
-
-        fetch("/rest/bruger/"+brugernavn+"?adgangskode="+adgangskode)
+        open("/rest/bruger/"+brugernavn+"?adgangskode="+ adgangskode);
 
 
     }
