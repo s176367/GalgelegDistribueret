@@ -30,7 +30,6 @@ public class GameController extends UnicastRemoteObject{
         if (app!=null)return;
 
         app = Javalin.create().start(7000);
-     //   app.before(ctx -> System.out.println("Denne side startes nu med " + ctx.method()));
         app.config.addStaticFiles("webside");
 
         //Rest
@@ -134,9 +133,6 @@ public class GameController extends UnicastRemoteObject{
             all += highscore.get(i)+"\n";
         }
         context.result(all);
-
-        //context.result("Dit brugernavn var: "+brugernavn+" og din adgangskode er: "+adgangskode);
-
 
     }
 
