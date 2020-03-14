@@ -1,5 +1,5 @@
 
-
+package Klient;
 
 import brugerautorisation.data.Bruger;
 import brugerautorisation.transport.rmi.Brugeradmin;

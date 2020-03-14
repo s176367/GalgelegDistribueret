@@ -1,3 +1,4 @@
+package Klient;
 
 import Server.GalgeLogikInterface;
 
