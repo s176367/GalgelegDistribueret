@@ -19,7 +19,7 @@ public class Klient {
         Scanner scanner = new Scanner(System.in);
         Brugeradmin ba = (Brugeradmin) Naming.lookup("rmi://javabog.dk/brugeradmin");
 
-
+        //
         System.out.println("Velkommen til galgespillet.");
         Boolean logIn = false;
         System.out.println("Log ind for at spille");
