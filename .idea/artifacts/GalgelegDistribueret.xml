@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="GalgelegDistribueret">
+    <output-path>$PROJECT_DIR$/out/artifacts/GalgelegDistribueret</output-path>
+    <root id="archive" name="GalgelegDistribueret.war">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes" />
+      </element>
+      <element id="artifact" artifact-name="GalgelegDistribueret:jar" />
+    </root>
+  </artifact>
+</component>
