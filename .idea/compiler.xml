@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="GalgelegDistribueret.klient.resources" target="1.8" />
       <module name="org.example.faelles.main" target="1.8" />
       <module name="org.example.faelles.test" target="1.8" />
       <module name="org.example.GalgelegDistribueret.main" target="1.8" />

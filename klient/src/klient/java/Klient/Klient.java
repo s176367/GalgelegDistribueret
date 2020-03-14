@@ -4,6 +4,7 @@ package Klient;
 import Server.GalgeLogikInterface;
 import brugerautorisation.data.Bruger;
 import brugerautorisation.transport.rmi.Brugeradmin;
+import io.javalin.http.Context;
 
 
 import java.net.MalformedURLException;
@@ -14,13 +15,28 @@ import java.util.Scanner;
 
 
 public class Klient {
+    GameController gameController;
+
+
+    public Klient() throws RemoteException {
+        gameController = new GameController();
+
+    }
+    public GalgeLogikInterface returnInterface() throws RemoteException, NotBoundException, MalformedURLException {
+        return (GalgeLogikInterface) Naming.lookup("rmi://dist.saluton.dk:20077/logik");
+    }
+
     public static void main(String[] args) throws RemoteException, NotBoundException, MalformedURLException {
+
         GalgeLogikInterface spil = (GalgeLogikInterface) Naming.lookup("rmi://dist.saluton.dk:20077/logik");
         GameController gameController = new GameController();
         Scanner scanner = new Scanner(System.in);
         Brugeradmin ba = (Brugeradmin) Naming.lookup("rmi://javabog.dk/brugeradmin");
 
+
+
         //
+        /*
         System.out.println("Velkommen til galgespillet.");
         Boolean logIn = false;
         System.out.println("Log ind for at spille");
@@ -40,15 +56,17 @@ public class Klient {
                 logIn = true;
                 System.out.println("Velkommen " + bruger.fornavn);
                 System.out.println("Du er nu logget ind og spillet begynder!");
-                gameController.start(spil);
-            }
-        }
+
+         */
+        gameController.start(spil);
+        // }
+    }
+
+
 
 
 
         //GameControllerInterface controller = (GameControllerInterface) Naming.lookup("rmi://localhost:1099/controller");
 
-
-
     }
-}
+
