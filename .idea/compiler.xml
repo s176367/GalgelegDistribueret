@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="org.example.faelles.main" target="1.8" />
+      <module name="org.example.faelles.test" target="1.8" />
+      <module name="org.example.GalgelegDistribueret.main" target="1.8" />
+      <module name="org.example.GalgelegDistribueret.test" target="1.8" />
+      <module name="org.example.klient.main" target="1.8" />
+      <module name="org.example.klient.test" target="1.8" />
+      <module name="org.example.server.main" target="1.8" />
+      <module name="org.example.server.test" target="1.8" />
+      <module name="org.forprojekt.faelles.src" target="1.8" />
+      <module name="org.forprojekt.For_Projekt.main" target="1.8" />
+      <module name="org.forprojekt.For_Projekt.test" target="1.8" />
+      <module name="org.forprojekt.GalgelegDistribuere.main" target="1.8" />
+      <module name="org.forprojekt.GalgelegDistribuere.test" target="1.8" />
+      <module name="org.forprojekt.GalgelegDistribueret.f" target="1.8" />
+      <module name="org.forprojekt.GalgelegDistribueret.faek" target="1.8" />
+      <module name="org.forprojekt.GalgelegDistribueret.faelles" target="1.8" />
+      <module name="org.forprojekt.GalgelegDistribueret.fal" target="1.8" />
+      <module name="org.forprojekt.GalgelegDistribueret.fæ" target="1.8" />
+      <module name="org.forprojekt.GalgelegDistribueret.fælles" target="1.8" />
+      <module name="org.forprojekt.GalgelegDistribueret.ma" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

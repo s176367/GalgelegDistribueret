@@ -1,5 +1,6 @@
 import brugerautorisation.data.Bruger;
 import brugerautorisation.transport.rmi.Brugeradmin;
+
 import io.javalin.Javalin;
 import io.javalin.http.Context;
 

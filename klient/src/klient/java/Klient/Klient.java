@@ -1,9 +1,9 @@
 
 package Klient;
 
+import Server.GalgeLogikInterface;
 import brugerautorisation.data.Bruger;
 import brugerautorisation.transport.rmi.Brugeradmin;
-import Server.GalgeLogikInterface;
 
 
 import java.net.MalformedURLException;
@@ -11,6 +11,7 @@ import java.rmi.Naming;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.util.Scanner;
+
 
 public class Klient {
     public static void main(String[] args) throws RemoteException, NotBoundException, MalformedURLException {
